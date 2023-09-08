@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formularios y Servlets</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            html {
+                font-family: "Arial", sans-serif;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Ejemplos de Java Servlets</h1>
+
+        <h2>Saludador simple</h2>
+        <p><a href="saludar-simple" target="_blank">/saludar-simple</a>: Acceso a "SaludarSimpleServlet" que genera un saludo dinámico</p>
+        <hr>
+        <h2>Saludador por nombre (Método GET)</h2>
+        <p>Se enviará una petición a "SaludarNombreServlet" de tipo GET (los datos viajarán en la URL).</p>    
+        <form name="form1" action="saludar-nombre" method="get">
+            <label for="fname1">Nombre:</label>
+            <input type="text" id="fname1" name="fname">
+            <br/><br/>
+            <label for="lname1">Apellido:</label>
+            <input type="text" id="lname1" name="lname">
+            <br/><br/>
+            <input type="submit">
+            <input type="reset">
+        </form>
+        <hr>
+        <h2>Saludador por nombre (Método POST)</h2>
+        <p>Se enviará una petición a "SaludarNombreServlet" de tipo POST (los datos viajarán en el cuerpo de la petición HTTP).</p>    
+        <form name="form2" action="saludar-nombre" method="post">
+            <label for="fname2">Nombre:</label>
+            <input type="text" id="fname2" name="fname">
+            <br/><br/>
+            <label for="lname2">Apellido:</label>
+            <input type="text" id="lname2" name="lname">
+            <br/><br/>
+            <input type="submit">
+            <input type="reset">
+        </form>
+        <hr>
+        <h2>Ejemplos de la PPT <a href="https://charlycimino.com/recursos/ppt/Java/Java%20Web%20Servlets" target="_blank">"Java Web: Servlets"</a></h2>
+        <ul>
+            <li>Página 7: <a href="welcome" target="_blank">/welcome</a></li>
+            <li>Página 10: <a href="muestra-request-servlet1" target="_blank">/muestra-request-servlet1</a></li>
+            <li>Página 10: <a href="muestra-request-servlet1?nom=Alan&ape=Turing" target="_blank">/muestra-request-servlet1?nom=Alan&ape=Turing</a></li>
+            <li>Página 12: <a href="muestra-request-servlet2?nom=Alan&ape=Turing" target="_blank">/muestra-request-servlet2?nom=Alan&ape=Turing</a></li>
+            <li>Página 14: <a href="muestra-request-servlet3" target="_blank">/muestra-request-servlet3</a></li>
+            <li>Página 14: <a href="muestra-request-servlet4" target="_blank">/muestra-request-servlet4</a></li>
+            <li>Página 18: <a href="muestra-response-servlet1" target="_blank">/muestra-response-servlet1</a></li>
+            <li>Página 20: <a href="muestra-response-servlet2" target="_blank">/muestra-response-servlet2</a></li>
+            <li>Página 20: <a href="muestra-response-servlet3" target="_blank">/muestra-response-servlet3</a></li>
+            <li>Página 21: <a href="muestra-response-servlet4" target="_blank">/muestra-response-servlet4</a></li>
+            <li>Página 21: <a href="muestra-response-servlet5" target="_blank">/muestra-response-servlet5</a></li>
+        </ul>
+        <hr>
+        <h1>Simulacro de inicio de sesión con Servlet</h1>
+        <form name="form3" action="login" method="post" >
+            <label for="user">Usuario:</label>
+            <input type="text" id="user" name="user">
+            <br/><br/>
+            <label for="pass">Clave: </label>
+            <input type="password" id="pass" name="pass">
+            <br/><br/>
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </body>
+</html>

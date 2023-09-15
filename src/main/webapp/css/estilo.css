@@ -1,0 +1,69 @@
+html {
+    font-family: "Arial", sans-serif;
+    font-size: 24px;
+}
+
+body {
+    color: white;
+    background: #192E33;
+}
+
+hr {
+    border: solid 2px white;
+}
+
+a {
+    color: #a3c2c9;
+}
+
+a:visited {
+    color: #a390b0;
+}
+
+h1 {
+    font-size: 1.3rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+code {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+ol > ol {
+    list-style-type: upper-latin;
+}
+
+footer {
+    border: inset 3px lightseagreen;
+    background: lightseagreen;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
+
+footer a, footer a:visited {
+    color: darkslateblue;
+}
+
+.resaltado a:hover {
+    color: greenyellow;
+}
+
+form {
+    border: outset 2px #192E33;
+    background: darkslategrey;
+    padding: 10px;
+    display: inline-block;
+}
+
+form input {
+    font-size: 1rem;
+}

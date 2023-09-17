@@ -14,7 +14,7 @@ import java.io.PrintWriter;
  * https://www.youtube.com/c/CharlyCimino Encontrá más código en mi repo de
  * GitHub: https://github.com/CharlyCimino
  */
-@WebServlet(urlPatterns = {"/muestra-request-servlet1"})
+@WebServlet(urlPatterns = {"/muestra-request-servlet1/*"})
 public class MuestraRequestServlet1 extends HttpServlet {
 
     @Override
@@ -38,6 +38,7 @@ public class MuestraRequestServlet1 extends HttpServlet {
         out.print("<p><strong>getRequestURI</strong>: " + req.getRequestURI() + "</p>");
         out.print("<p><strong>getContextPath</strong>: " + req.getContextPath() + "</p>");
         out.print("<p><strong>getServletPath</strong>: " + req.getServletPath() + "</p>");
+        out.print("<p><strong>getPathInfo</strong>: " + req.getPathInfo()+ "</p>");
         out.print("<p><strong>getQueryString:</strong> " + req.getQueryString() + "</p>");
         out.print("</body></html>");
     }

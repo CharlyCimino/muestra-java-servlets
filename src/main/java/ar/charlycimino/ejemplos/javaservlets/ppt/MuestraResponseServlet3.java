@@ -13,12 +13,12 @@ import java.io.IOException;
  * https://www.youtube.com/c/CharlyCimino Encontrá más código en mi repo de
  * GitHub: https://github.com/CharlyCimino
  */
-@WebServlet(urlPatterns = {"/muestra-response-servlet3"})
+@WebServlet(urlPatterns = {"/servlet-resp3"})
 public class MuestraResponseServlet3 extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws
             ServletException, IOException {
-        resp.sendError(500, "Falla adrede"); // Status 'Falla adrede'
+        resp.sendError(500, "Falla a propósito");
     }
 }

@@ -13,7 +13,7 @@ import java.io.IOException;
  * https://www.youtube.com/c/CharlyCimino Encontrá más código en mi repo de
  * GitHub: https://github.com/CharlyCimino
  */
-@WebServlet(urlPatterns = {"/muestra-response-servlet2"})
+@WebServlet(urlPatterns = {"/servlet-resp2"})
 public class MuestraResponseServlet2 extends HttpServlet {
 
     @Override

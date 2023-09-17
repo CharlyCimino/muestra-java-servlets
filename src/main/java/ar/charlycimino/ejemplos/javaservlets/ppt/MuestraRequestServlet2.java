@@ -15,7 +15,7 @@ import java.util.Enumeration;
  * https://www.youtube.com/c/CharlyCimino Encontrá más código en mi repo de
  * GitHub: https://github.com/CharlyCimino
  */
-@WebServlet(urlPatterns = {"/muestra-request-servlet2"})
+@WebServlet(urlPatterns = {"/servlet-req2"})
 public class MuestraRequestServlet2 extends HttpServlet {
 
     @Override

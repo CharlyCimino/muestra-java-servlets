@@ -14,7 +14,7 @@ import java.time.LocalDate;
  * https://www.youtube.com/c/CharlyCimino Encontrá más código en mi repo de
  * GitHub: https://github.com/CharlyCimino
  */
-@WebServlet(urlPatterns = {"/muestra-request-servlet3"})
+@WebServlet(urlPatterns = {"/servlet-req3"})
 public class MuestraRequestServlet3 extends HttpServlet {
 
     @Override
@@ -25,7 +25,7 @@ public class MuestraRequestServlet3 extends HttpServlet {
         req.setAttribute("el10", new Persona("Leo","Messi"));
         req.setAttribute("hoy", LocalDate.now());
        
-        req.getRequestDispatcher("/muestra-request-servlet4").forward(req, resp);
+        req.getRequestDispatcher("servlet-req4").forward(req, resp);
 
     }
 

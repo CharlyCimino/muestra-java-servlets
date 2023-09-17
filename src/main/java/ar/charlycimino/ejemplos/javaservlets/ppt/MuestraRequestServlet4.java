@@ -14,7 +14,7 @@ import java.io.PrintWriter;
  * https://www.youtube.com/c/CharlyCimino Encontrá más código en mi repo de
  * GitHub: https://github.com/CharlyCimino
  */
-@WebServlet(urlPatterns = {"/muestra-request-servlet4"})
+@WebServlet(urlPatterns = {"/servlet-req4"})
 public class MuestraRequestServlet4 extends HttpServlet {
 
     @Override

@@ -13,12 +13,12 @@ import java.io.IOException;
  * https://www.youtube.com/c/CharlyCimino Encontrá más código en mi repo de
  * GitHub: https://github.com/CharlyCimino
  */
-@WebServlet(urlPatterns = {"/muestra-response-servlet4"})
+@WebServlet(urlPatterns = {"/servlet-resp4"})
 public class MuestraResponseServlet4 extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws
             ServletException, IOException {
-        resp.sendRedirect("http://w3schools.com"); // Redirección
+        resp.sendRedirect("https://charlycimino.com"); // Redirección
     }
 }

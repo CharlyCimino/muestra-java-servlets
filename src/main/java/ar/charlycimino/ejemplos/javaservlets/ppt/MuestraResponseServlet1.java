@@ -15,7 +15,7 @@ import java.util.Collection;
  * Aprendé más Java en mi canal: https://www.youtube.com/c/CharlyCimino
  * Encontrá más código en mi repo de GitHub: https://github.com/CharlyCimino
  */
-@WebServlet(urlPatterns = {"/muestra-response-servlet1"})
+@WebServlet(urlPatterns = {"/servlet-resp1"})
 public class MuestraResponseServlet1 extends HttpServlet {
 
     @Override
